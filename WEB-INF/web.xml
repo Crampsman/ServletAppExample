@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+	<servlet>
+		<servlet-name>ManagerServlet</servlet-name>
+		<servlet-class>com.goliev.manager.servlet.EmployeeServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>com.goliev.manager.servlet.HomeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ManagerServlet</servlet-name>
+		<url-pattern>/employees</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+</web-app>
